@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+        
+<beans>
+<bean id="register" class="com.entities.StudentRegister">
+<property name="studID" value="1001"></property>
+<property name="studName" value="Shivani Bhoi"></property>
+<property name="studAge" value="23"></property>
+<property name="studCity" value="Pune"></property>
+<property name="studPhone" value="5678654567"></property>
+<property name="studSection" value="10-D"></property>
+<property name="studEmail" value="abcd23@gmail.com"></property>
+<property name="studPassword" value="1234567@aaaa"></property>
+<property name="login" ref="login"></property>
+</bean>
+
+<bean id="login" class="com.entities.StudentLogin">
+<property name="userName" value="abcd23@gmail.com"></property>
+<property name="loginPassword" value="1234567@aaaa"></property>
+
+</bean>
+
+</beans>
