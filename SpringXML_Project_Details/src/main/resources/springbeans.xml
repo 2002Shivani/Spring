@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+	<bean id="employee" class="com.entities.ProjectEmployee">
+		<constructor-arg index="0" value="1001"></constructor-arg>
+		<constructor-arg index="1" value="Devendra Pardeshi"></constructor-arg>
+		<constructor-arg index="2" value="Testing"></constructor-arg>
+		<constructor-arg index="3" value="4"></constructor-arg>
+		<constructor-arg index="4" value="6"></constructor-arg>
+		<constructor-arg index="5" ref="project"></constructor-arg>
+	</bean>
+
+	<bean id="project" class="com.entities.ProjectDetails">
+		<constructor-arg index="0" value="JBK1212"></constructor-arg>
+		<constructor-arg index="1" value="Banking"></constructor-arg>
+		<constructor-arg index="2" value="SBI Health Insurance"></constructor-arg>
+		<constructor-arg index="3" value="400000"></constructor-arg>
+
+	</bean>
+</beans>
